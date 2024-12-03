@@ -58,7 +58,7 @@ function createBoard(columns, count){
 function createCard(flippedIcon) {
     const template = document.querySelector('#card-template').cloneNode(true).content;
     const card = template.querySelector('.card');
-    card.querySelector('#flipped-icon').classList.add(`fa-${flippedIcon}`);
+    card.querySelector('#flippedIcon').classList.add(`fa-${flippedIcon}`);
   
     return card;
   }
