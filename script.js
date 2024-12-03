@@ -28,7 +28,7 @@ submitBtn.addEventListener('click',(event)=>{
 function createBoard(columns, count){
     const gameBoard = document.querySelector(".board");
 
-    gameBoard.innerHTML = "";
+    gameBoard.innerHTML = null;
   
     const template = document.querySelector('#gameTableTemplate').cloneNode(true).content;
     const gameTable = template.querySelector('.table');
