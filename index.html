@@ -9,13 +9,14 @@
 </head>
     <body>
         <div class="content">
+            <div class="confetti"></div>
             <main>
                 <div class="form-wrapper">
                     <form action="" class="form-content">
                         <div class="state">
                             <div class="state-title">Пары</div>
-                            <div class="state-info">Шаги: 0 шагов</div>
-                            <div class="state-info">время: 60 сек</div>
+                            <div class="state-info state__time">Шаги: 0 шагов</div>
+                            <div class="state-info state__moves">время: 60 сек</div>
                         </div>
                         <div class="board">
                             <div class="dop-state">Настроить количество карточек (от 2 до 6)</div>
@@ -31,15 +32,15 @@
             <div class="table">
 
             </div>
-            <div class="table-btn">Рестарт</div>
+            <div class="submit-btn table-btn">Рестарт</div>
         </template>
         <template id="card-template">
             <div class="card">
-                <i id="flippedIcon"></i>
-                <i class="defaultIcon"></i>
+                <i id="flippedIcon" class="flipped-icon fa"></i>
+                <i id="defaultIcon" class="default-icon fa fa-question-circle"></i>
             </div>
         </template>
 
-        <script src="script.js"></script>
+        <script type="module" src="./script.js"></script>
     </body>
 </html>
